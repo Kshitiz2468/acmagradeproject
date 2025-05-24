@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Checkout</title>
+  <style>
+    body {
+      font-family: Georgia, serif;
+      background: #8fc7db;
+      margin: 0;
+      padding: 40px;
+    }
+
+    .checkout-container {
+      max-width: 600px;
+      margin: auto;
+      background-color: aqua;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #003049;
+      margin-bottom: 30px;
+    }
+
+    .order-summary {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: #0d1b2a;
+    }
+
+    .address-section {
+      margin-top: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      color: #0e0101;
+    }
+
+    input[type="text"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      border: 1px solid #999;
+    }
+
+    .payment-method {
+      margin: 20px 0;
+    }
+
+    .payment-method label {
+      font-weight: bold;
+    }
+
+    .payment-option {
+      margin-top: 10px;
+    }
+
+    .confirm-btn {
+      background-color: #cd8615;
+      color: rgb(255, 255, 255);
+      padding: 12px 20px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    .confirm-btn:hover {
+      background-color: #eab771;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="checkout-container">
+    <h2>Place Order</h2>
+    <div class="order-summary">
+      <strong>Order Total:</strong> ₹2,94,000
+    </div>
+
+    <div class="address-section">
+      <label for="address">Shipping Address:</label>
+      <textarea id="address" rows="4" placeholder="Enter your address here..."></textarea>
+    </div>
+
+    <div class="payment-method">
+      <label>Payment Method:</label>
+      <div class="payment-option">
+        <input type="radio" id="cod" name="payment" value="cod" />
+        <label for="cod">Cash on Delivery</label>
+      </div>
+    </div>
+
+    <button class="confirm-btn">Confirm Order</button>
+  </div>
+
+</body>
+</html>

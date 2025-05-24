@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Product View</title>
+  <style>
+    body {
+      font-family: Georgia, serif;
+      margin: 0;
+      padding: 0;
+      background-color: rgb(146, 198, 217);
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 20px;
+      background: rgb(93, 141, 156);
+      box-shadow: 0 4px 12px rgba(5, 0, 0, 0.1);
+      border-radius: 10px;
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .product-image {
+      flex: 1 1 400px;
+    }
+
+    .product-image img {
+      width: 100%;
+      border-radius: 1px;
+    }
+
+    .product-details {
+      flex: 1 1 500px;
+    }
+
+    .product-title {
+      font-size: 28px;
+      margin-bottom: 10px;
+      color: #0e0101;
+    }
+
+    .product-price {
+      font-size: 24px;
+      color: #eeeff2;
+      margin: 10px 0;
+    }
+
+    .product-description {
+      font-size: 16px;
+      color: #0b0000;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .btn-group {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .proceed-btn,.remove-btn {
+      padding: 12px 20px;
+      border: 2px solid #423308;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .remove-btn {
+      background-color: #e08504;
+      color: white;
+    }
+
+    .remove-btn:hover {
+      background-color: #d62436;
+    }
+
+    .proceed-btn {
+      background-color: #d87f03;
+      color: white;
+    }
+
+    .proceed-btn:hover {
+      background-color: #f79a05;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="product-image">
+      <img src="https://www.jansatta.com/wp-content/uploads/2022/12/Upcoming-Electric-Bikes.jpg" alt="Electric Motor Bike">
+    </div>
+    <div class="product-details">
+      <h1 class="product-title">Electric Bike X200</h1>
+      <div class="product-price">₹2,94,000</div>
+      <p class="product-description">
+        The Electric Bike X200 is built for urban mobility and adventure. With a lightweight aluminum frame, 250W motor, and a 50km battery range, it delivers efficiency and style. Enjoy smooth rides, fast charging, and a modern digital display.
+      </p>
+      <div class="btn-group">
+        <button class="proceed-btn">Proceed to Buy</button>
+        <button class="remove-btn">Remove from Cart</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

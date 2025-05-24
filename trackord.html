@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Order History</title>
+  <style>
+    body {
+      font-family: Garamond, serif;
+      background-color: #3a75b1;
+      margin: 40px;
+      position: relative;
+    }
+
+    .order-history {
+      max-width: 800px;
+      margin: auto;
+      background: #70abdc;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(12, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 10px;
+      color: #090000;
+    }
+
+    .track-btn {
+      display: block;
+      width: fit-content;
+      margin: 0 auto 20px auto;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .track-btn:hover {
+      background-color: #0056b3;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    th, td {
+      padding: 12px 15px;
+      text-align: left;
+      border-bottom: 1px solid #84151a;
+    }
+
+    th {
+      background-color: #f5a403;
+      color: #fff;
+    }
+
+    tr:hover {
+      background-color: #f1f1f1;
+    }
+
+    td {
+      color: #100303;
+    }
+
+    .order-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .review, .rating {
+      background-color: #f0e90a;
+      padding: 8px 15px;
+      border-radius: 4px;
+      border: 1px solid #0a0202;
+      font-size: 14px;
+    }
+
+    .replace-btn, .refund-btn {
+      padding: 6px 10px;
+      border: none;
+      border-radius: 4px;
+      font-size: 13px;
+      cursor: pointer;
+    }
+
+    .replace-btn {
+      background-color: #ff9800;
+      color: #fff;
+    }
+
+    .refund-btn {
+      background-color: #ba0505;
+      color: #fff;
+    }
+
+    .replace-btn:hover {
+      background-color: #dbaa60;
+    }
+
+    .refund-btn:hover {
+      background-color: #ac5454;
+    }
+
+    .share-btn {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      width: 55px;
+      height: 55px;
+      background-color: #4caf50;
+      color: rgb(250, 245, 245);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      box-shadow: 0 4px 8px rgba(17, 1, 1, 0.3);
+      cursor: pointer;
+    }
+
+    .share-btn:hover {
+      background-color: #388e3c;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="order-history">
+    <h2>Your Order History</h2>
+    <button class="track-btn">Track Order</button>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Order ID</th>
+          <th>Vehicle Name</th>
+          <th>Price</th>
+          <th>Total</th>
+          <th>Order Date</th>
+          <th>Options</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>#ORD4736</td>
+          <td>Volt Cruiser M3</td>
+          <td>₹2,94,000</td>
+          <td>₹2,94,000</td>
+          <td>2025-05-23</td>
+          <td>
+            <button class="replace-btn">Replace</button>
+            <button class="refund-btn">Refund</button>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="6">
+            <div class="order-actions">
+              <div class="review">Review: ★★★★☆</div>
+              <div class="rating">Rating: 4.0/5</div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>#ORD7435</td>
+          <td>Electric Bike X1</td>
+          <td>₹24,999</td>
+          <td>₹24,999</td>
+          <td>2023-07-01</td>
+          <td>
+            <button class="replace-btn">Replace</button>
+            <button class="refund-btn">Refund</button>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="6">
+            <div class="order-actions">
+              <div class="review">Review: ★★★☆☆</div>
+              <div class="rating">Rating: 3.0/5</div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="share-btn" title="Share this page">🔗</div>
+
+</body>
+</html>

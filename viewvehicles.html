@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>eVehicle Products</title>
+  <style>
+    body {
+      font-family: Georgia, serif;
+      background: radial-gradient(circle,rgb(60, 92, 173) 61%, rgb(132, 176, 226) 96%);
+      margin: 0;
+      padding: 20px;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      margin: 0 auto;
+      text-align: center;
+      color: #110e0e;
+      flex-grow: 1;
+    }
+
+    .login-btn {
+      background-color: #c90909;
+      color: #eff5f4;
+      padding: 8px 16px;
+      border: 2px solid #121716;
+      border-radius: 6px;
+      text-decoration: none;
+      margin-left: auto;
+      transition: background 0.3s;
+    }
+
+    .login-btn:hover {
+      background-color: #671903;
+      color: #fff;
+    }
+
+    .top-buttons {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .top-buttons .btn {
+      margin: 0 10px;
+    }
+
+    .product-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .product-card {
+      background: #d7af0e;
+      border-radius: 12px;
+      box-shadow: 0 4px 28px rgba(0, 0, 0, 0.1);
+      padding: 15px;
+      text-align: center;
+      transition: transform 0.2s;
+    }
+
+    .product-card:hover {
+      transform: scale(1.03);
+    }
+
+    .product-card img {
+       border: 2px solid #e66464;
+       border-radius: 4px;
+       padding: 6px;
+       width: 150px;;
+    }
+
+    img:hover {
+  box-shadow: 0 0 2px 1px rgba(7, 79, 103, 0.5);
+}
+
+    .product-title {
+      font-size: 18px;
+      margin: 10px 0;
+      color: #0d0101;
+    }
+
+    .product-desc {
+      font-size: 14px;
+      color: #353131;
+    }
+
+    .product-price {
+      font-size: 16px;
+      font-weight: bold;
+      margin-top: 10px;
+      color: #17776e;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 16px;
+      background-color: #b67109;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      background-color: #b38228;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="#" class="login-btn">Login</a>
+    <h1>Explore Our Electric Vehicles</h1>
+  </header>
+
+  <div class="top-buttons">
+    <a href="#" class="btn">View Cart</a>
+    <a href="#" class="btn">Track Order</a>
+  </div>
+
+  <div class="product-container">
+    <div class="product-card">
+      <img src="https://en.upway.be/cdn/shop/products/AG84-1.jpg?v=1649360045" alt="E-Bike">
+      <div class="product-title">Electric Bike X1</div>
+      <div class="product-desc">Lightweight e-bike with 50km range and 250W motor.</div>
+      <div class="product-price">₹24,999</div>
+      <a href="#" class="btn">Add to Cart</a>
+    </div>
+
+    <div class="product-card">
+      <img src="https://5.imimg.com/data5/SELLER/Default/2023/6/317709723/PQ/RS/ET/151583660/2023-bmw-c-400-gt.jpg" alt="E-Scooter">
+      <div class="product-title">Smart E-Scooter V2 Plus</div>
+      <div class="product-desc">Portable scooter with fast charging and cruise control.</div>
+      <div class="product-price">₹1,20,000</div>
+      <a href="#" class="btn">Add to Cart</a>
+    </div>
+
+    <div class="product-card">
+      <img src="https://static1.topspeedimages.com/wordpress/wp-content/uploads/2023/03/1679928241021.jpg?q=50&fit=crop&w=1140&h=&dpr=1.5" alt="Electric Car">
+      <div class="product-title">Eco Car Model Z</div>
+      <div class="product-desc">Compact electric car with 300km range and smart tech.</div>
+      <div class="product-price">₹1,40,00,000</div>
+      <a href="#" class="btn">Add to Cart</a>
+    </div>
+
+    <div class="product-card">
+      <img src="https://assets.newatlas.com/dims4/default/adfe518/2147483647/strip/true/crop/1920x1080+0+0/resize/1920x1080!/format/webp/quality/90/?url=http%3A%2F%2Fnewatlas-brightspot.s3.amazonaws.com%2F69%2F94%2F798612364f33bb7fa37f364575b6%2Fmain.jpg" alt="E-Motorbike">
+      <div class="product-title">Volt Cruiser M3</div>
+      <div class="product-desc">High-performance electric motorbike for city & highways.</div>
+      <div class="product-price">₹2,94,000</div>
+      <a href="#" class="btn">Add to Cart</a>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Filter Option</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 50px;
+      background-color: rgb(96, 130, 215);
+    }
+
+    .filter-container {
+      max-width: 300px;
+      margin: auto;
+      background: linear-gradient(90deg,rgba(27, 65, 250, 1) 1%, rgb(8, 27, 81) 52%, rgba(0, 98, 255, 1) 100%);
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .filter-label {
+      margin-bottom: 10px;
+      display: block;
+      font-weight: bold;
+    }
+
+    .filter-select {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #c4b638;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="filter-container">
+    <label for="userFilter" class="filter-label">Select Role:</label>
+    <select id="userFilter" class="filter-select">
+      <option value="">-- Choose Option --</option>
+      <option value="vendor">Vendor</option>
+      <option value="customer">Customer</option>
+    </select>
+  </div>
+
+</body>
+</html>
